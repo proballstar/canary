@@ -18,12 +18,16 @@ class Drone():
         super().__init__()
         self.target_position = np.array([0.0, 0.0, 0.0, 0.0])
         self.in_mission = True  # Currently in mission
+        self.target_altitude = 3 # Target altitude is 3 meters
 
         # Initial state
         self.flight_state = States.MANUAL
 
     def arming(self):
         self.flight_state = States.ARMING
+        self.arm()
+        self.take_control()
     
     def takeoff(self):
         self.flight_state = States.TAKEOFF
+        self.altitude(self.target_altitude)
