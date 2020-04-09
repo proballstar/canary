@@ -26,3 +26,7 @@ class MotionPlanning():
         self.flight_state = States.PLANNING
         TARGET_ALTITUDE = 5
         SAFETY_DISTANCE = 3
+        self.target[2] = TARGET_ALTITUDE
+        self.safety[-6] = SAFETY_DISTANCE
+        self.ascend(TARGET_ALTITUDE)
+        print("Running A* Search Algorithm...")
