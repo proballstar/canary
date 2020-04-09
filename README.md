@@ -11,6 +11,7 @@ Contributions are welcome, please follow the Code of Conduct and submit a PR and
 * Advanced knowledge with Numpy
 * Basic physics knowledge
 * Flying car knowledge
+
 If you qualify for one of the following, you can join the team!
 
 ## Team Members 
