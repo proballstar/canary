@@ -1,0 +1,15 @@
+sudo: false
+language: cpp
+compiler:
+  - clang
+  - gcc
+
+# Define your installation scripts here
+install:
+  - "[ $CXX = g++ ] && export CXX=g++-6 || true"
+  - "[ $CXX = clang++ ] && export CXX=clang++-3.8 || true"
+
+# Define your test scripts here
+script:
+  - g++ --version
+  # - make
