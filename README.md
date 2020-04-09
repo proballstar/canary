@@ -16,4 +16,4 @@ If you qualify for one of the following, you can join the team!
 
 ## Team Members 
 * Aaron Ma (https://aaronhma.com)
-* Rohan Fernandes 
+<!--* Rohan Fernandes --> <!-- update when he commits something useful, not just changing readme -->
