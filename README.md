@@ -1,4 +1,4 @@
-# Titan
+# Canary
 An open source self-flying car framework for everyone!
 
 ## Contributing
