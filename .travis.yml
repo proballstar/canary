@@ -1,6 +1,13 @@
 os: linux
 dist: bionic
 language: python
+env:
+  global:
+    - CURRENT_CANARY_VERSION=0.0.1
+    - CI_NODE_TOTAL=2
+  # jobs:
+  #   - CI_NODE_INDEX=0
+  #   - CI_NODE_INDEX=1
 # compiler:
 #   - clang
 #   - gcc
