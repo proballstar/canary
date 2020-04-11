@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import matplotlib.pylab as pylab
 import jdc
 
-# FOR USE IN FIREBOLT LAS:
+# FOR USE IN FIREBOLT LABS:
 # from test import test_plot
 
 # FOR USE IN FIREBOLT LABS:
@@ -82,9 +82,6 @@ class Drone2D:
         c, M_x = self.get_thrust_and_moment()
         angular_acc = M_x / self.I_x
         return angular_acc
-    
-    ############################
-    # BEGIN TODOS ##############
     
     def advance_state(self, dt): 
         """
