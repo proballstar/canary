@@ -4,19 +4,27 @@ class Drone{
     int batteryPercentage = 100;
     bool anonymous = false; 
     bool isFlying = true;
-    String manufacturer;
+    String manufacturer = 'Firebolt-ai';
     // @TODO(proballstar): add more properties
-    Drone(this.batteryPercentage, this.anonymous,this.isFlying, this.manufacturer)
-    String location(){
+        String location(){
         //@TODO: make python/dart code to find location
         return location
     }
     String LowBattery(){
         if(batteryPercentage < 30){
-           return 'Warning, the Battery Percentage is very low it is $batteryPercentage' 
+           return 'Warning, the Battery Percentage is very low it is $batteryPercentage'; 
         }else{
-            return 'Battery is Fine'
+            return 'Battery is Fine';
         }
+    }
+    int Battery(){
+        // return the battery percentage
+    }
+    void Anymous(){
+        anonymous = true; 
+    }
+    void Waiting(){
+        isFlying = false;
     }
     void safetyWhenAnonymous(){
         if(anonymous != false){
