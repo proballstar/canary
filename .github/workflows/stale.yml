@@ -1,0 +1,19 @@
+name: Mark stale issues and pull requests
+
+on:
+  schedule:
+  - cron: "0 0 * * *"
+
+jobs:
+  stale:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/stale@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        stale-issue-message: 'Hey there! :) Since nobody is commenting on this issue, this issue will be marked as stale. Thanks for understanding!\n-The Canary Authors'
+        stale-pr-message: "Hey there! :) Since our maintainers haven't reviewed this PR due to an issue, this PR will be marked as stale. Thanks for understanding!\n-The Canary Authors"
+        stale-issue-label: 'stale-issue'
+        stale-pr-label: 'stale-pr'
