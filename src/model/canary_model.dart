@@ -6,7 +6,6 @@ class Drone{
     bool isFlying;
     String manufacturer;
     // @TODO(proballstar): add more properties
-    Drone(this.batteryPercentage, this.anonymous,this. isFlying, this.manufacturer)
     String location(){
         //@TODO: make python/dart code to find location
         return location
@@ -29,12 +28,13 @@ class Drone{
     
 }
 
-class firebolt-ai extends Drone{
+class fireboltai extends Drone{
     //Add properties that only a Firebolt-ai Drone has
+    String manufacturer = "Firebolt-ai"
     //Add any different functions only that Firebolt-ai Drone has
-    @override
+    //@override
     //Add any functions that a regular drone has that Firebolt-ai Drone does differently
     
 }
-Canaray = firebolt-ai()
+Canaray = fireboltai()
 
