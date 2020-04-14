@@ -24,6 +24,7 @@ class Drone {
     }
     int Battery(){
         // return the battery percentage
+        return batteryPercentage
     }
     void Anymous(){
         anonymous = true; 
