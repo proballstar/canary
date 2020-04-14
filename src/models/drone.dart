@@ -1,15 +1,13 @@
-// @TODO(proballstar): change to python
-class Car{
-    //creating properties
+class Drone {
     int batteryPercentage = 100;
     int Longitude;
     int Latitude
     bool isFlying = true;
-    String manufacturer = 'Firebolt-ai';
+    String manufacturer = 'Firebolt Space Agency';
     String location
         // @TODO(proballstar): add more properties
-    String findLocation(){
-        // code to get location 
+    String findLocation() {
+        // Rohan, where is location defined???
         return location
     }
     String location(){
