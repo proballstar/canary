@@ -1,12 +1,19 @@
 // @TODO(proballstar): change to python
-class Drone{
+class Car{
     //creating properties
     int batteryPercentage = 100;
-    bool anonymous = false; 
+    int Longitude;
+    int Latitude
     bool isFlying = true;
     String manufacturer = 'Firebolt-ai';
-    // @TODO(proballstar): add more properties
-        String location(){
+    String location
+        // @TODO(proballstar): add more properties
+    String findLocation(){
+        // code to get location 
+        return location
+    }
+    String location(){
+        
         //@TODO: make python/dart code to find location
         return location
     }
@@ -26,18 +33,12 @@ class Drone{
     void Waiting(){
         isFlying = false;
     }
-    void safetyWhenAnonymous(){
-        if(anonymous != false){
-            //@TODO: Add code when drone is anonymous
-        }else{
-            print('All Good Just make sure the drone is doing fine')
-        }
-    }
-    //@TODO: Add more functions for the drone
+    //add  more functions for the car
+    
     
 }
 
-class firebolt extends Drone{
+class firebolt extends Car{
     //Add properties that only a Firebolt-ai Drone has
     //Add any different functions only that Firebolt-ai Drone has
     @override
