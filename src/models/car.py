@@ -1,11 +1,11 @@
 #replace with actual fields
-#long = 0
-#lat = 0
-#height = 0
-#on = true
-#company = 'firebolt space agency'
-#isFlying = false
-#anonymous = false
+long = 0
+lat = 0
+height = 0
+on = true
+company = 'firebolt space agency'
+isFlying = false
+anonymous = false
 
 class car:
     def __init__(self, long, lat, height,on, company, isFlying, anonymous,gas):
@@ -43,4 +43,18 @@ class car:
         self._height = self._height + units
     def fall(self,units):
         self._height= self._height - units
-canary = car(null,null,null, false,'firebolt space agency', false, false, 200)
+def test():
+    try:
+        # TODO(aaronhma): Print test messages with color
+        canary = car(long,lat,height, on,'firebolt space agency', isFlying, anonymous, gas)
+        print("[PASS] Passed!")
+    except:
+        canary = None
+        raise Exception("[FAIL] Test failed!")
+    return canary
+
+if __name__ == "__main__":
+    sep = "==============================================================="
+    print(sep, "\nTesting!\n")
+    test()
+    print("\n", sep)
