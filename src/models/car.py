@@ -22,9 +22,9 @@ class car:
     def refillGas(self):
         self._gas = 100
     def lowGas(self):
-        // update amount of gas
+        # update amount of gas
         if self._gas < 20:
-            print("Refill gas soon the percentage of gas is",self._gas,"%"
+            print("Refill gas soon the percentage of gas is",self._gas,"%")
     def turnOff(self):
         self._on = true
     def  takeOff(self):
