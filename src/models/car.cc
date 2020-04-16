@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 class Drone {
-   public:
+   private:
     int height;
     string location;
     bool antonymous;
@@ -19,6 +19,7 @@ class Drone {
         long = f;
         pilot = g;
     }
+   public:
     int findLocation(){
         return lat;
         return long;
